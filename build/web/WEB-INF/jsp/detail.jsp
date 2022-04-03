@@ -1,8 +1,3 @@
-<%-- 
-    Document   : detail
-    Created on : 15 Nov 2021, 19:54:05
-    Author     : janvier
---%>
 
 <%@page import="com.example.model.UserModel"%>
 <%@page import="example.db.CoreDB"%>
@@ -25,7 +20,9 @@
         String username=(String)session.getAttribute("username");
         for (Map.Entry<Integer, UserModel> entry : user.entrySet()) {  
             UserModel um = entry.getValue();
-             if(username.equals(um.getUsername()) )
+             if(username.equals(um.getUsername()) ){
+                 System.out.println("Displaying user..."+ username);
+             }
 
         %>
         <div class="info">            

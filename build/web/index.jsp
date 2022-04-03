@@ -6,7 +6,7 @@
    <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Codeland Challenge</title>
+      <title>Java Challenge</title>
       <link href="WEB-INFO/css/styles.css" rel="stylesheet">
       <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
       <style>
@@ -42,39 +42,39 @@
             <div class="grid">
                <div class="grid-col-2">
                   <span> <i aria-hidden="true" class="fa fa-user"></i> </span>
-                  <input type="text" name="fname" required placeholder="First Name" class="md" value="<%= (fname !=null) ? fname:" "%>" />
+                  <input autocomplete="off" type="text" name="fname" required placeholder="First Name" class="md" value="<%= (fname !=null) ? fname:" "%>" />
                </div>
                <div class="grid-col-2 ml">
                   <span> <i aria-hidden="true" class="fa fa-user"></i> </span>
-                  <input type="text" name="lname" required placeholder="Last Name"  class="md" value="<%= (lname !=null) ? lname:" "%>" />
+                  <input autocomplete="off" type="text" name="lname" required placeholder="Last Name"  class="md" value="<%= (lname !=null) ? lname:" "%>" />
                </div>
             </div>
             <div class="grid-col-2">
                <span><i class="fa fa-user"></i></span>
-               <input type="text" placeholder="Username" name="username" value="<%= (username !=null) ? username:" "%>"  />
+               <input autocomplete="off" type="text" placeholder="Username" name="username" value="<%= (username !=null) ? username:" "%>"  />
             </div>
             <div class="grid-col-2">
                <span><i class="fa fa-user"></i></span>
-               <input type="number" placeholder="age" name="age" required value="<%= (age !=null) ? age:" "%>"  />
+               <input autocomplete="off" type="number" placeholder="age" name="age" required value="<%= (age !=null) ? age:" "%>"  />
             </div>
             <div class="grid-col-2">
                <span><i aria-hidden="true" class="fa fa-mobile "></i></span>
-               <input type="text" placeholder="phone Number" name="phoneNumber"  value="<%= (phoneNumber !=null) ? phoneNumber:" "%>"  />
+               <input autocomplete="off" type="text" placeholder="phone Number" name="phoneNumber"  value="<%= (phoneNumber !=null) ? phoneNumber:" "%>"  />
             </div>
             <div class="grid-col-2">
                <span><i aria-hidden="true" class="fa fa-lock"></i></span>
-               <input type="password"  id="usr_password" placeholder="password" name="user_password" />               
+               <input autocomplete="off" type="password"  id="usr_password" placeholder="password" name="user_password" />               
 
             </div>
                 
             <div class="grid-col-2">
                <span><i aria-hidden="true" class="fa fa-lock"></i></span>
-               <input type="password" name="retype_password" id="conf_password"
+               <input autocomplete="off" type="password" name="retype_password" id="conf_password"
                   placeholder="Re-type Password" />
             </div>
             <div class="input-container mt">
-               <input type="radio" name="gender" value="male" id="male" /> <label for="male">Male</label>
-               <input type="radio" name="gender"  value="female" id="female" /> <label
+               <input autocomplete="off" type="radio" name="gender" value="male" id="male" /> <label for="male">Male</label>
+               <input autocomplete="off" type="radio" name="gender"  value="female" id="female" /> <label
                   for="female">Female</label>
             </div>
             <div class="input-container">

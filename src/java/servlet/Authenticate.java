@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Servlet.java to edit this template
- */
+
 package servlet;
 
 import com.example.model.UserModel;
@@ -21,7 +18,7 @@ import javax.servlet.http.HttpSession;
 
 /**
  *
- * @author janvier
+ * @author Paul
  */
 @WebServlet(name = "Authenticate", urlPatterns = {"/Authenticate"})
 public class Authenticate extends HttpServlet {
@@ -85,13 +82,15 @@ public class Authenticate extends HttpServlet {
 
                 String unHashedPass = HashPass.getInstance().unHashedPass(umData.getUserPassword(),umData.getAge());
 
-                if (username.equals(umData.getUsername()) && password.equals(unHashedPass)== true) {
+                if (username.equals(umData.getUsername().toLowerCase().trim()) && password.equals(unHashedPass)== true){
+//                  if (umData.getUsername().toLowerCase().trim().equals("paul@gmail.com")){
                         session.setAttribute("username", umData.getUsername());
                         getServletContext().getRequestDispatcher("/WEB-INF/jsp/detail.jsp").include(req, response);				
 
                 } else {
-
+                       System.out.println("provided username=>"+ username + " username for hash map=>"+ umData.getUsername()+ " provided pswd=>"+ password+ " password from hash map=>" + unHashedPass);
                         getServletContext().getRequestDispatcher("/WEB-INF/jsp/notfound.jsp").include(req, response);
+                          
 
                 }
 		}

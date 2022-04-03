@@ -13,7 +13,7 @@ import java.util.Random;
 
 /**
  *
- * @author janvier
+ * @author Paul
  */
 public class Admin implements User {
 

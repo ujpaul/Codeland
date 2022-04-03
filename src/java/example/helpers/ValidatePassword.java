@@ -8,7 +8,7 @@ import example.db.CoreDB;
 
 /**
  *
- * @author janvier
+ * @author Paul
  */
 public class ValidatePassword {
     

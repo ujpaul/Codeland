@@ -1,8 +1,3 @@
-<%-- 
-    Document   : login
-    Created on : 15 Nov 2021, 19:54:15
-    Author     : janvier
---%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>

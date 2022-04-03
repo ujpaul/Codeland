@@ -6,7 +6,7 @@ package example.helpers;
 
 /**
  *
- * @author janvier
+ * @author Paul
  */
 public class HashPass {
       

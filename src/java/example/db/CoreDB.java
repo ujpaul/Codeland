@@ -9,7 +9,7 @@ import java.util.LinkedHashMap;
 
 /**
  *
- * @author janvier
+ * @author Paul
  */
 public class CoreDB {
     private LinkedHashMap<Integer, UserModel> lhmData = new LinkedHashMap<Integer, UserModel>();

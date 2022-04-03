@@ -9,7 +9,7 @@ import java.util.LinkedHashMap;
 
 /**
  *
- * @author janvier
+ * @author Paul
  */
 public interface User {
     public String  login(String password , String username) throws Exception;

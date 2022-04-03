@@ -83,7 +83,6 @@ public class Authenticate extends HttpServlet {
                 String unHashedPass = HashPass.getInstance().unHashedPass(umData.getUserPassword(),umData.getAge());
 
                 if (username.equals(umData.getUsername().toLowerCase().trim()) && password.equals(unHashedPass)== true){
-//                  if (umData.getUsername().toLowerCase().trim().equals("paul@gmail.com")){
                         session.setAttribute("username", umData.getUsername());
                         getServletContext().getRequestDispatcher("/WEB-INF/jsp/detail.jsp").include(req, response);				
 

@@ -21,16 +21,16 @@
         for (Map.Entry<Integer, UserModel> entry : user.entrySet()) {  
             UserModel um = entry.getValue();
              if(username.equals(um.getUsername()) ){
-                 System.out.println("Displaying user..."+ username);
-             }
-
         %>
         <div class="info">            
                 <%
                  out.println("<li>" +um.getFname() + "</li><li> " + um.getLname() + "</li><li>" + um.getUsername() 
                 + "</li><li>" + um.getPhoneNumber() +"</li><li>" + um.getGender() +"</li><li>" + um.getUserRole()+"</li>");
-
+                 break;
+            }else{
+            continue;
             }
+}
         %>
             </li>
         </div>
